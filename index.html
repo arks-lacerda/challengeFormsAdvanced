@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Preconnect-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Froms Challenge</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+  <!-- Css on Local -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Assess your Mentorship</h1>
+      <p>It's time to evaluate</p>
+      <img src="./images/img.svg" alt="A pink thought bubble with five stars, three of which are filled with white, the other two are opaque.">
+      <div class="title-form">
+        <h2>Personal Information</h2>
+      </div>
+    </header>
+    <main>
+      <form action="" id="assess-mentorship">
+        <fieldset>
+          <div class="col-2">
+            <div class="input-wrapper">
+              <label for="event-name">
+                Name
+              </label>
+              <input 
+                type="text" 
+                id="event-name" 
+                required
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-surname">
+                Surname
+              </label>
+              <input 
+                type="text" 
+                id="event-surname"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="event-surname">
+              Email <span>(enter a valid email)</span>
+            </label>
+            <input 
+              type="email" 
+              id="event-surname"
+              required
+            />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Mentor Information</legend>
+
+            <div class="input-wrapper">
+              <label for="event-name-mentor">Select who was your mentor</label>
+              <select 
+                name="name-mentor" 
+                id="event-name-mentor"
+                required
+              >
+                <option value="">Select the Mentor</option>
+                <option value="carlos-vasquez">Carlos Vasquez</option>
+                <option value="marcos-silveira">Marcos Silveira</option>
+                <option value="flavia-gomes">Flavia gomes</option>
+                <option value="diana-morais">Diana Morais</option>
+                <option value="gabriela-lacerda">Gabriela Lacerda</option>
+              </select>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-feedback">Feedback on the mentor</label>
+              <textarea name="feedback" id="event-feedback" ></textarea>
+            </div>
+
+            <div class="checkbox-wrapper">
+              <input type="checkbox" id="event-doubts" />
+              <label for="event-doubts">All my doubts were clarified during the mentoring</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Scheduling of the next mentoring</legend>
+
+            <div class="col-3">
+              <div class="input-wrapper">
+                <label for="event-date">Date
+                  <span>(DD/MM/AAAA)</span>
+                </label>
+                <input 
+                  type="date" 
+                  id="event-date" 
+                />
+              </div>
+
+                <div class="input-wrapper">
+                  <label for="event-start">Start</label>
+                  <input type="time" id="event-start" />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="event-end">End</label>
+                  <input type="time" id="event-end" />
+                </div>
+            </div>
+          </div>
+        </fieldset>
+        <button>
+          Save
+        </button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>

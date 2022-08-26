@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #BFD7E4;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 465px;
+  background-color: #293241;
+  position: absolute;
+  z-index: -1;
+}
+
+.page {
+  width: 750px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  margin-top: 107px;
+  font-family: 'Staatliches', cursive;
+  color: #fff;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+}
+
+header p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+header img {
+  padding: 21px 0 35px 0;
+}
+
+header .title-form {
+  width: 750px;
+  height: 133px;
+  background-color: #F67669;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px 20px 0 0;
+}
+
+header .title-form h2 {
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #fff;
+}
+
+form {
+  min-height: 700px;
+  background-color: #fff;
+  padding: 64px;
+  margin-bottom: 200px;
+  border-radius: 0 0 20px 20px;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset .col-2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+
+fieldset .col-2 input {
+  min-width: 300px;
+}
+
+.checkbox-wrapper label,
+.input-wrapper label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #4E4958;
+}
+
+.input-wrapper label span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #C1BCCC;
+  margin-left: 9px;
+}
+
+.input-wrapper label span:hover {
+  color: #5e5c62;
+}
+
+.input-wrapper textarea,
+.input-wrapper select,
+.input-wrapper input {
+  width: 100%;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  height: 56px;
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 24px;
+  color: #4E4958;
+  background-color: #FAFAFC;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldset-wrapper legend {
+  width: 100%;
+  font-family: 'Staatliches', cursive;
+  margin: auto;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #253B51;
+  text-align: center;
+  padding-bottom: 8px;
+  padding-top: 32px;
+  border-bottom: 1px solid #E6E6F0;
+}
+
+.fieldset-wrapper .checkbox-wrapper,
+.fieldset-wrapper .input-wrapper {
+  margin-top: 32px;
+}
+
+.input-wrapper select {
+  display: flex;
+  width: 300px;
+
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right 24px top 50%;
+}
+
+.input-wrapper textarea {
+  height: 167px;
+}
+
+.checkbox-wrapper {
+  position: relative;
+}
+
+.checkbox-wrapper  label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  opacity: 0;
+}
+
+.checkbox-wrapper label::before {
+  content: '';
+  width: 26px;
+  height: 26px;
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+}
+
+.checkbox-wrapper input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 11.17L1.83 7L0.410004 8.41L6 14L18 2L16.59 0.589996L6 11.17Z' fill='%23F67669'/%3E%3C/svg%3E ");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkbox-wrapper input:focus + label::before {
+  border: 2px solid #000;
+}
+
+.col-3 {
+  display: flex;
+  gap: 32px;
+}
+.col-3 > div:nth-child(1) {
+  width: 100%;
+}
+
+button {
+  text-transform: uppercase;
+  margin-top: 64px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 40px;
+  gap: 10px;
+  border: none;
+  background: #F67669;
+  border-radius: 8px;
+
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #fff;
+}
+
+input:invalid {
+  border: 2px solid #F67669;
+}
